@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as *;
+@use "../custom" as *;
+@use "../abstracts/colors" as *;
+
+.footer {
+    background-color: #242946;
+    .nav-link {
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &-social {
+        margin-bottom: 0;
+        ul li a:hover path {
+            fill: $secondary;
+        }
+    }
+    .nav-link:hover {
+        color: $secondary;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    .footer {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .container {
+        padding-top: 0 !important;
+        div {
+            justify-content: space-between;
+        }
+    }
+    .footer-social {
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+    }
+    .navbar-nav {
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-left: 36px;
+    }
+}
+
+// @media only screen and (min-width: 992px) {
+//     .container {
+//         padding-left: 120px;
+//         padding-right: 120px;
+//     }
+// }

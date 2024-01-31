@@ -1,0 +1,36 @@
+@use "../abstracts/colors" as *;
+@use "../custom" as *;
+
+
+
+
+.download-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .download-cards {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        height: 400px;
+    }
+    .download-card:nth-child(2) {
+        align-self: center;
+    }
+    .download-card:nth-child(3) {
+        align-self:flex-end;
+    }
+    .download-card {
+        height: 300px;
+    }
+    .download-ad {
+        width: 50%;
+    }
+}
+
+

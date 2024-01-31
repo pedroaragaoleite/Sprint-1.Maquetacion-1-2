@@ -1,0 +1,52 @@
+@use "../abstracts/colors" as *;
+@use "../custom" as *;
+
+.faq {
+    text-align: center;
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+    .accordion-item {
+        border: none;
+        border-bottom: 1px solid $light-gray !important;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+    }
+    .accordion-item h2 button {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        position: relative;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+            color: $secondary;
+        }
+        span .accordion-svg {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+        }
+        span .accordion-svg path {
+            stroke: $secondary;
+        }
+    }
+    .accordion-item h2 button.collapsed span .accordion-svg {
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%) ;
+        }
+    .accordion-item h2 button.collapsed .accordion-svg path {
+        stroke: $primary;
+    }
+    .accordion-body {
+        font-size: 14px;
+        text-align: left;
+    }
+    &-btn {
+        margin-top: 30px;
+    }
+}

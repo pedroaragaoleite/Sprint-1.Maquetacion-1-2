@@ -1,0 +1,55 @@
+@use "../abstracts/colors" as *;
+@use "../custom" as *;
+
+
+.btn-login {
+    background-color: $secondary;
+    &:hover {
+        background-color: #FFFFFF;
+        color: $secondary !important;
+        border: 1px solid $secondary;
+    }
+}
+
+.btn-primary {
+    &:hover {
+        background-color: #FFFFFF !important;
+        color: $primary !important;
+        border: 1px solid $primary !important;
+    }
+}
+
+.btn-light {
+    &:hover {
+        background-color: #FFFFFF !important;
+        color: $dark !important;
+        border: 1px solid $dark !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .download-card .btn-primary {
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size: 12px;
+    }
+}
+/*  Offcanvas Menu buttons*/
+.offcanvas-body ul li a {
+    color: #FFFFFF;
+    opacity: .8;
+}
+
+.offcanvas-body ul li {
+    border-top: 1px solid rgba(229, 227, 227, .3);
+}
+
+.offcanvas-body ul .btn {
+    border: 2px solid #FFFFFF;
+}
+
+.offcanvas-header button {
+    background-color:transparent;
+    border: none;
+}
+
